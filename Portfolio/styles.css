@@ -1,7 +1,12 @@
 header{background-color:#42431B;
 color:#f8f3e1;
 padding: 2rem;}
-nav>a{color: #f8f3e1;}
+nav>a{color: #f8f3e1;
+margin: 0 .4rem;
+text-decoration: none;}
+
+nav>a:hover{color: #d2d8b3;
+text-decoration: underline;}
 
 footer{background-color: #42431B;
 color:#f8f3e1;
@@ -10,6 +15,11 @@ padding: 2rem;}
 footer a{color: #f8f3e1;}
 
 section{padding: 1rem 2rem;}
+
+main{background-color: #f8f3e1;
+font-family: Georgia, 'Times New Roman', Times, serif}
+
+/* home page */
 
 .hello{background-color: #f8f3e1;}
 
@@ -39,3 +49,20 @@ img{max-width: 10cm;}
 /* gallery page */
 .projects{background-color: #c1c1c1;
 margin: 5rem;}
+
+/* contact page */
+
+.form{background-color: #d2d8b3;
+margin: 3rem;
+border-radius: 1rem;
+width: 10cm;}
+
+.form label{color: #42431B;
+display: block;}
+
+.form h3{color: #42431B;
+padding: 0.5rem;}
+
+main{background-color: #f8f3e1;}
+
+.my-contact{background-color: #e4dbbc;}
