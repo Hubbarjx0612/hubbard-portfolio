@@ -1,13 +1,41 @@
 header{background-color:#42431B;
-color:#f8f3e1;}
+color:#f8f3e1;
+padding: 2rem;}
 nav>a{color: #f8f3e1;}
 
-main{background-color: #f8f3e1;}
-
 footer{background-color: #42431B;
-color:#f8f3e1;}
+color:#f8f3e1;
+padding: 2rem;}
+
 footer a{color: #f8f3e1;}
+
+section{padding: 1rem 2rem;}
+
+.hello{background-color: #f8f3e1;}
 
 .my-dog{background-color: #e4dbbc;}
 
 .things{background-color: #d2d8b3;}
+
+img{max-width: 10cm;}
+
+/* education page */
+
+.prws{background-color: #f8f3e1;}
+
+.laurel{background-color: #e4dbbc;}
+
+.colleges{background-color: #d2d8b3;}
+
+/*wor page*/
+.missy{background-color: #D2D8B3;}
+
+.YMCA{background-color: #f8f3e1;}
+
+.blfac{background-color: #e4dbbc;}
+
+.internship{background-color: #d2d8b3;}
+
+/* gallery page */
+.projects{background-color: #c1c1c1;
+margin: 5rem;}
