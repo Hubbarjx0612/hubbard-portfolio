@@ -15,7 +15,10 @@ header img{width: 2.3cm;}
 
 header h1{
   font-family: "Bodoni Moda SC", serif;
-color: #f8f3e1;}
+color: #f8f3e1;
+text-decoration: none;}
+
+header>div>a{text-decoration: none;}
 
 header h1:hover{color: #d2d8b3;
 text-decoration: underline;}
@@ -35,6 +38,8 @@ flex-wrap: wrap;
 justify-content: space-between;
 align-items: baseline;}
 
+footer h3{font-family: "Bodoni Moda SC", serif;}
+
 footer a{color: #f8f3e1;
 margin: .2rem;
 text-decoration: none;}
@@ -42,12 +47,10 @@ text-decoration: none;}
 footer a:hover{color: #d2d8b3;
 text-decoration: underline;}
 
-section{padding: .5rem 5rem;}
-
 main{background-color: #f8f3e1;
-font-family: Georgia, 'Times New Roman', Times, serif}
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
-section{ padding:1rem 5rem;}
+section{ padding:.5rem 5rem;}
 
 /* home page */
 
@@ -55,59 +58,72 @@ section{ padding:1rem 5rem;}
 
 .hello{justify-content: space-between;
     display: flex;
-    align-items: flex-end;
-    gap: 6rem;}
+    align-items: center;
+    gap: 4rem;}
 
-    .profile-pic{max-width: 50%;}
- 
+    .profile-pic{max-width: 35%;
+    border-radius: 5%;
+    border-color: #42431B;
+    border: 2px solid;
+    }
 
 .my-dog{background-color: #e4dbbc;}
 
 .my-dog{display: flex;
-justify-content: space-between; /*not working*/
-align-items: center;}
+justify-content: space-between;
+align-items: center;
+gap: 4rem;}
 
-.my-dog img{max-width: 30%;}
-
+.my-dog img{max-width: 35%;
+border-radius: 5%;
+    border-color: #42431B;
+    border: 2px solid;}
 
 .things-gallery{display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;}
 
-.things-gallery img{max-width: 22%;}  
+.things-gallery img{max-width: 22%;
+border-radius: 5%;
+    border-color: #42431B;
+    border: 2px solid;}  
+
+.hello, .my-dog, .things{padding: 3rem 5rem;}
     
 /* education page */
 
 .education{background-color: #E4DBBC;}
 .education-intro{text-align: center;}
 
-.prws{background-color: #D2D8B3;}
-
-    .prwslogo{display: flex;
+.prws{background-color: #D2D8B3;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;}
-    .prwslogo img{max-width: 40%;
-        float :right;
-        }
 
-.laurel{background-color: #D2D8B3;}
+ .prws img{max-width: 30%;
+    }
 
 .colleges{background-color: #F8F3E1;}
 
 .colleges{display: flex;
-    justify-content: space-between; /*not working*/
-    align-items: center;}
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;}
 
-    .joy-on-field{max-width: 30%;} 
-
+    .joy-on-field{max-width: 35%;
+    border-radius: 5%;
+    border-color: #42431B;
+    border: 2px solid;} 
 
 /*work page*/
 
 .work{background-color: #F8F3E1;}
 
-.work a{color: #505120;}
+.work a{color: #84853a;}
 
 .work a:hover{text-decoration: underline;
 color: #444519;}
@@ -124,18 +140,21 @@ color: #444519;}
 
 /* gallery page */
 
-.projects-gallery img{width: 5cm; height: 5cm; object-fit: cover;}
+.projects-gallery img{width: 5cm; height: 5cm; object-fit: cover;
+border-radius: 5%;
+    border-color: #42431B;
+    border: 2px solid;}
 .projects-gallery figure{margin: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-   }
+    align-items: center;}
     
 .projects-gallery{display: flex;
 flex-wrap: wrap;
 justify-content: center;
-margin: 0rem 4rem;}
-.projects-gallery{padding-bottom: 3rem;}
+padding-bottom: 2rem;
+margin: 0rem 4rem;
+}
 
 .projects-gallery a{text-align: center;
     text-decoration: none;
@@ -148,13 +167,17 @@ margin: 0rem 4rem;}
 
 .contact-main{display: flex;
 justify-content: space-evenly;
-align-items: top;}
+align-items: center;
+padding-bottom: 3rem;
+padding-top: 3rem;}
 
 .form{background-color: #d2d8b3;
 margin: 2rem;
 border-radius: 1rem;
 max-width: 40%;
-padding: 1rem 2rem
+padding: 1rem 2rem;
+border-color: #42431B;
+border: 1px solid;
 }
 
 input, textarea{
@@ -185,4 +208,70 @@ main{background-color: #f8f3e1;
 color: #42431B;}
 
 main h3, main h2, main a{color: #353515;}
+
+@media (max-width: 895px) {
+    header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;}
+    nav{margin-left: 6rem}
+
+    .logo{display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;}}
+
+@media (max-width: 500px) {
+    header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+    nav{margin-left: 0;}
+
+    .logo{display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;}
+
+    .hello{justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;}
+    .profile-pic{max-width: 80%;}
+
+.my-dog{justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;}
+    .my-dog img{max-width: 80%;}
+
+.things-gallery img{max-width: 80%;}
+
+.prws{flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;}
+ .prws img{max-width: 100%;}
+
+ .colleges{display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;}
+
+    .joy-on-field{max-width: 80%;}
+
+.contact-main{display: flex;
+    flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+padding-bottom: 3rem;
+padding-top: 3rem;}
+}
 
